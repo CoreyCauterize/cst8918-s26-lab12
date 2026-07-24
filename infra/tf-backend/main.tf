@@ -71,14 +71,14 @@ resource "azurerm_storage_container" "container" {
 }
 
 output "resource_group_name" {
-  value     = azurerm_resource_group.rg.name
+  value = azurerm_resource_group.rg.name
 }
 output "storage_account_name" {
-  value     = azurerm_storage_account.storage.name
+  value = azurerm_storage_account.storage.name
 }
 output "container_name" {
-  value     = azurerm_storage_container.container.name
+  value = azurerm_storage_container.container.name
 }
 output "primary_key_name" {
-  value     = azurerm_storage_account.storage.primary_access_key
+  value = azurerm_storage_account.storage.primary_access_key
 }
