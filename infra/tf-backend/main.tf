@@ -66,6 +66,19 @@ resource "azurerm_storage_account" "storage" {
 
 resource "azurerm_storage_container" "container" {
   name               = "tfstate"
-  storage_account_id = azurerm_storage_account.storage.storage_account_id
+  storage_account_id = azurerm_storage_account.storage.id
 
+}
+
+output "resource_group_name" {
+  value     = azurerm_resource_group.rg.name
+}
+output "storage_account_name" {
+  value     = azurerm_storage_account.storage.name
+}
+output "container_name" {
+  value     = azurerm_storage_container.container.name
+}
+output "primary_key_name" {
+  value     = azurerm_storage_account.storage.primary_access_key
 }
