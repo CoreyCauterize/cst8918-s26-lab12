@@ -49,7 +49,7 @@ resource "azurerm_resource_group" "rg" {
 }
 
 resource "azurerm_storage_account" "storage" {
-  name                     = "${var.label_prefix}-githubactions"
+  name                     = "${var.label_prefix}githubactions"
   location                 = var.region
   resource_group_name      = azurerm_resource_group.rg.name
   account_kind             = "BlobStorage"
@@ -79,6 +79,7 @@ output "storage_account_name" {
 output "container_name" {
   value = azurerm_storage_container.container.name
 }
-output "primary_key_name" {
+output "arm_access_key" {
   value = azurerm_storage_account.storage.primary_access_key
+  sensitive=true
 }
