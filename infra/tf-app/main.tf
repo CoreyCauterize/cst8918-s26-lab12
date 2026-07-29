@@ -13,7 +13,7 @@ provider "cloudinit" {
 variable "label_prefix" {
   description = "A prefix to add to all resources"
   type        = string
-  default     = "chen1101"
+  default     = "chen1101mark0138"
 }
 variable "region" {
   description = "Location of the region"
@@ -29,4 +29,8 @@ resource "azurerm_resource_group" "rg" {
     Assignment = "Lab"
     Lab        = "A12"
   }
+}
+
+output "resource_group_name" {
+  value = azurerm_resource_group.rg.name
 }
