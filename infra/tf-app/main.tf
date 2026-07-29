@@ -1,11 +1,5 @@
 # Configure the Terraform runtime requirements.
 
-# Define providers and their config params
-provider "azurerm" {
-  # Leave the features block empty to accept all defaults
-  features {}
-}
-
 provider "cloudinit" {
   # Configuration options
 }
