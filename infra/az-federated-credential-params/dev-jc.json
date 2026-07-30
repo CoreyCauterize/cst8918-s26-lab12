@@ -1,0 +1,7 @@
+{
+  "name": "dev-jc",
+  "issuer": "https://token.actions.githubusercontent.com",
+  "subject": "repo:CoreyCauterize@105244046/cst8918-s26-lab12@1310406005:ref:refs/heads/dev-jc",
+  "description": "CST8918 Lab12 - GitHub Actions",
+  "audiences": ["api://AzureADTokenExchange"]
+}
