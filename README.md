@@ -3,6 +3,7 @@
 | Student Name | Student Number | Github Account | 
 | ----- | ----- | ----- |
 | Joshua Chen | 041280453 | JChen-AC |
+| Corey Mark-Stewart| 040770982| CoreyCauterize|
 
 
 ## Submission Screenshots 
